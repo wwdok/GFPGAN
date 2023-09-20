@@ -84,7 +84,7 @@ class GFPGANer():
             save_ext='png',
             use_parse=True,
             device=self.device,
-            model_rootpath=os.path.dirname(model_path) # assume GFPGANv1.4.pth, detection_Resnet50_Final.pth, parsing_parsenet.pth, alignment_WFLW_4HG.pth are under the same folder
+            model_rootpath=os.path.dirname(model_path)) # assume GFPGANv1.4.pth, detection_Resnet50_Final.pth, parsing_parsenet.pth, alignment_WFLW_4HG.pth are under the same folder
 
         if model_path.startswith('https://'):
             model_path = load_file_from_url(
