@@ -82,7 +82,7 @@ def get_requirements(filename='requirements.txt'):
 if __name__ == '__main__':
     write_version_py()
     setup(
-        name='gfpgan',
+        name='gfpgan_patch',
         version=get_version(),
         description='GFPGAN aims at developing Practical Algorithms for Real-world Face Restoration',
         long_description=readme(),
@@ -90,7 +90,7 @@ if __name__ == '__main__':
         author='Xintao Wang',
         author_email='xintao.wang@outlook.com',
         keywords='computer vision, pytorch, image restoration, super-resolution, face restoration, gan, gfpgan',
-        url='https://github.com/TencentARC/GFPGAN',
+        url='https://github.com/wwdok/GFPGAN',
         include_package_data=True,
         packages=find_packages(exclude=('options', 'datasets', 'experiments', 'results', 'tb_logger', 'wandb')),
         classifiers=[
